@@ -1,0 +1,59 @@
+<div class="pass-view-group event light">
+  <div id="pass-overlay" class="pass-overlay"></div>
+  <div id="pass-view" class="pass-view event" [ngClass]="hexBackgroundColor">
+    <div class="head">
+      <div class="title-bar">
+        <div class="logo-wrapper" [ngClass]="logo">
+          <div class="logo">
+            <img id="logo-image" class="logo-image" [src]="logoImageUrl" alt="Event logo" />
+            <p id="logo-text-placeholder">G</p>
+          </div>
+        </div>
+        <div class="card-title" [textContent]="localizedIssuerName">[TEST ONLY] Heraldic Event</div>
+      </div>
+      <div class="dim-divider" style="height: 1px"></div>
+      <div style="height: 10px"></div>
+      <div class="header">
+        <!-- <div class="sub-header" [textContent]="venueName">Shoreline Amphitheater</div> -->
+        <div class="main-header" [textContent]="eventName">Saffire Pass</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-item start-item">
+        <div class="row-label">Date</div>
+        <div class="row-label-value" id="event-date" [textContent]="dateTimeStart">02/02/2023</div>
+      </div>
+      <div class="row-item middle-item"></div>
+      <div class="row-item end-item">
+        <div class="row-label">Time</div>
+        <div class="row-label-value" id="event-time" [textContent]="dateTimeStart">11:30</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row-item start-item">
+        <div class="row-label">Gate</div>
+        <div class="row-label-value" [textContent]="seatInfoGate">3A</div>
+      </div>
+      <div class="row-item middle-item">
+        <div class="row-label">Section</div>
+        <div class="row-label-value" [textContent]="seatInfoSection">40</div>
+      </div>
+      <div class="row-item end-item">
+        <div class="row-label">Row / Seat</div>
+        <div class="row-label-value">
+          <span [textContent]="seatInfoRow">G</span> / <span [textContent]="seatInfoSeat">5</span>
+        </div>
+      </div>
+    </div>
+    <div style="height: 6px"></div>
+    <div id="info-rows-barcode-separator" style="height: 10px"></div>
+    <div class="barcode">
+      <div id="barcode-container" class="barcode-wrapper">
+        <img class="barcode-img qr" barcode-type="QR_CODE" style="display: block;"  barcode-type="QR_CODE" [src]="barcodeImageUrl" alt="A code">  
+    </div>
+    </div>
+    <span class="barcode-alternate-text" [textContent]="barcodeAlternateText"></span>
+    <div style="height: 10px"></div>
+    <img id="hero-image" class="hero-image" [src]="heroImageUrl" alt="events banner" />
+  </div>
+</div>
