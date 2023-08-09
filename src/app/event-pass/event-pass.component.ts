@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./event-pass.component.scss']
 })
 export class EventPassComponent {
-  hexBackgroundColor = #ffffff;
+  hexBackgroundColor = '#ffffff';
   logo = 'logo';
   logoImageUrl = 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=660&h=660';
   localizedIssuerName = '[TEST ONLY] Heraldic Event';
